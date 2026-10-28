@@ -17,7 +17,7 @@ import streamlit as st
 
 import viz
 
-APP_VERSION = "v0.1 · 2026-10-28"
+APP_VERSION = "v0.2 · 2026-10-28"
 DATA = Path(__file__).parent / "data"
 
 st.set_page_config(page_title="미래 물 직업 지도", page_icon="🌊", layout="wide",
@@ -67,11 +67,43 @@ header[data-testid="stHeader"] { background: transparent; }
 .sounding .cap { max-width: 36ch; font-weight: 500; }
 .sounding .cap small { display: block; color: var(--ink-2); font-weight: 400; font-size: .82rem; }
 /* 테스트 결과 */
-.match { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 4px; }
-.match-card { background: var(--paper); border: 2px solid var(--tide); border-radius: 14px; padding: 14px 16px; display: grid; gap: 4px; }
-.match-card .job { font-family: var(--display); font-size: 1.45rem; line-height: 1.2; }
-.match-card .why { color: var(--ink-2); font-size: .9rem; margin: 0; }
-.tag-ex { font-family: var(--mono); font-size: .7rem; letter-spacing: .08em; color: var(--buoy); }
+/* 1분 테스트 — 질문마다 한 줄, 선택지는 큰 알약 버튼 */
+.st-key-quiz { background: var(--paper); border: 1px solid var(--line); border-radius: 20px; padding: 6px 22px; box-shadow: 0 10px 30px -18px rgba(16,42,56,.35); gap: 0; }
+.st-key-qrow1, .st-key-qrow2 { border-top: 1px dashed var(--line); }
+.st-key-qrow0, .st-key-qrow1, .st-key-qrow2 { padding: 14px 0; }
+.qlab { display: flex; align-items: center; gap: 12px; }
+.qn { flex: none; width: 40px; height: 40px; border-radius: 12px; background: var(--chip); color: var(--tide); font-family: var(--mono); font-weight: 600; font-size: .95rem; display: grid; place-items: center; }
+.qt { font-family: var(--display); font-size: 1.28rem; line-height: 1.25; color: var(--ink); word-break: keep-all; }
+.st-key-quiz [data-testid="stButtonGroup"] { gap: 8px; }
+.st-key-quiz [data-testid="stButtonGroup"] button { min-height: 44px; padding: 6px 16px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--sea); color: var(--ink); font-size: .96rem; transition: border-color .15s, background .15s, transform .15s; }
+.st-key-quiz [data-testid="stButtonGroup"] button:hover { border-color: var(--tide); color: var(--tide); transform: translateY(-1px); }
+.st-key-quiz [data-testid="stButtonGroup"] button[aria-checked="true"],
+.st-key-quiz [data-testid="stButtonGroup"] button[aria-checked="true"]:hover { background: var(--tide) !important; border-color: var(--tide) !important; color: #fff !important; box-shadow: 0 6px 14px -8px rgba(15,124,140,.9); }
+.st-key-quiz [data-testid="stButtonGroup"] button[aria-checked="true"] * { color: #fff !important; }
+.st-key-quiz [data-testid="stButtonGroup"] button p { font-size: .96rem; }
+/* 추천 결과 — 바닷물 그러데이션 카드 두 장 */
+.match { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 18px; }
+.mc { position: relative; overflow: hidden; border-radius: 20px; padding: 18px 20px 16px; display: grid; gap: 12px; align-content: start;
+      color: #fff; background: radial-gradient(120% 140% at 100% 0%, #3A9DAB 0%, #0F7C8C 38%, #0A4B57 100%); box-shadow: 0 16px 34px -22px rgba(10,75,87,.9); }
+.mc:not(.first) { background: radial-gradient(120% 140% at 100% 0%, #2E7F8E 0%, #0E5E6B 40%, #0B2E3B 100%); }
+.mc::after { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .18;
+      background: repeating-radial-gradient(circle at 105% -10%, transparent 0 18px, rgba(255,255,255,.55) 18px 19px); }
+.mc > * { position: relative; z-index: 1; }
+.mc-top { display: flex; justify-content: space-between; align-items: center; }
+.rank { font-family: var(--mono); font-size: .74rem; letter-spacing: .12em; background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.35); padding: 3px 10px; border-radius: 999px; }
+.grow { font-size: .9rem; font-weight: 600; color: #FFD9C9; }
+.mc-body { display: flex; gap: 14px; align-items: center; }
+.mc-ill { flex: none; width: 60px; height: 60px; padding: 8px; border-radius: 16px; background: rgba(255,255,255,.12); color: #fff; }
+.mc-ill g { fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.mc-ill .f { fill: rgba(255,255,255,.18); } .mc-ill .d { fill: currentColor; stroke: none; }
+.mc-job { font-family: var(--display); font-size: 1.65rem; line-height: 1.15; }
+.mc-tech { font-size: .88rem; opacity: .85; margin-top: 2px; }
+.mc-hits { display: flex; flex-wrap: wrap; gap: 6px; }
+.hit { font-size: .8rem; padding: 3px 10px; border-radius: 999px; border: 1px dashed rgba(255,255,255,.35); opacity: .6; }
+.hit.on { opacity: 1; border-style: solid; background: rgba(255,255,255,.18); }
+.mc-go { justify-self: start; font-size: .85rem; color: #fff !important; text-decoration: none !important; border-bottom: 1px solid rgba(255,255,255,.5); }
+.mc-go:hover { border-bottom-color: #fff; }
+.tag-ex { font-size: .82rem; color: var(--ink-2); margin: 8px 2px 0 !important; }
 /* 기술 카드 */
 .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
 .card { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 18px; display: grid; grid-template-columns: auto 1fr auto; gap: 4px 16px; align-content: start; }
@@ -180,25 +212,42 @@ def _touch():
     st.session_state["touched"] = True
 
 
-pick = {}
-cols = st.columns(3)
-for col, q in zip(cols, TECH["quiz"]):
-    with col:
-        lab = dict(q["opts"])
-        pick[q["id"]] = st.pills(q["h"], options=[v for v, _ in q["opts"]], format_func=lab.get,
-                                 default=EX[q["id"]], key=f"q_{q['id']}", on_change=_touch)
-sel = {k: (v or EX[k]) for k, v in pick.items()}
+# 선택지 앞 작은 그림 — 글자만 있을 때보다 한눈에 고르기 쉽게
+EMOJI = {"code": "💻", "science": "🧪", "earth": "🌏", "society": "🏛️", "make": "🛠️", "analyze": "🔬",
+         "field": "🧭", "persuade": "📣", "climate": "🌡️", "safe": "🚰", "energy": "⚡", "future": "🚀"}
 LABEL = {v: l for q in TECH["quiz"] for v, l in q["opts"]}
+
+pick = {}
+with st.container(key="quiz"):
+    for n, q in enumerate(TECH["quiz"]):
+        with st.container(key=f"qrow{n}"):
+            a, b = st.columns([1.25, 2.75], vertical_alignment="center", gap="small")
+            a.markdown(f'<div class="qlab"><span class="qn">Q{n + 1}</span><span class="qt">{esc(q["h"])}</span></div>',
+                       unsafe_allow_html=True)
+            with b:
+                # wrap=True: 칸이 좁으면 다음 줄로 넘김 (기본값은 칸 안에서 옆으로 밀려 잘려 보임)
+                pick[q["id"]] = st.pills(q["h"], options=[v for v, _ in q["opts"]],
+                                         format_func=lambda v: f"{EMOJI.get(v, '')} {LABEL[v]}",
+                                         default=EX[q["id"]], required=True, wrap=True,
+                                         key=f"q_{q['id']}", on_change=_touch, label_visibility="collapsed")
+sel = {k: (v or EX[k]) for k, v in pick.items()}
 top = sorted(ITEMS, key=lambda t: -(sum(v in t["tags"] for v in sel.values()) + (ratio(t) or 3) / 100))[:2]
 HL = {t["id"] for t in top}
 cards = []
-for t in top:
-    hits = [LABEL[v] for v in sel.values() if v in t["tags"]]
-    why = " · ".join(hits) + "을(를) 좋아한다면 잘 맞아요." if hits else "새로운 분야에 도전해 보세요."
-    tag = "" if st.session_state["touched"] else '<span class="tag-ex">예시 · 직접 골라 보세요</span>'
-    cards.append(f'<div class="match-card">{tag}<span class="job">{esc(t["job"].split(" · ")[0])}</span>'
-                 f'<p class="why"><b>{esc(t["name"])}</b> — {why}</p></div>')
-md(f'<div class="match">{"".join(cards)}</div>')
+for rank, t in enumerate(top, 1):
+    r = ratio(t)
+    grow = f"{r:.1f}× 성장" if r else "새로 등장"
+    chips = "".join(f'<span class="hit{" on" if v in t["tags"] else ""}">{EMOJI.get(v, "")} {esc(LABEL[v])}</span>'
+                    for v in sel.values())
+    cards.append(f"""<div class="mc{' first' if rank == 1 else ''}">
+  <div class="mc-top"><span class="rank">추천 {rank}</span><span class="grow num">{grow}</span></div>
+  <div class="mc-body"><svg class="mc-ill" viewBox="0 0 64 64" aria-hidden="true"><g>{ICONS.get(t['id'], '')}</g></svg>
+    <div><div class="mc-job">{esc(t['job'].split(' · ')[0])}</div>
+    <div class="mc-tech">{esc(t['name'])} · {esc(t['inst'])}</div></div></div>
+  <div class="mc-hits">{chips}</div>
+  <a class="mc-go" href="#t-{t['id']}">기술 카드 보기 →</a></div>""")
+note = "" if st.session_state["touched"] else '<p class="tag-ex">예시 결과예요 — 위에서 직접 골라 보세요</p>'
+md(f'<div class="match">{"".join(cards)}</div>{note}')
 
 # ── 직업 흐름 지도 ──
 section("job map · 전공 → 기술 → 연구소", "무엇을 공부하면 어떤 물 기술로 이어질까",
