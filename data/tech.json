@@ -1,0 +1,250 @@
+{
+ "_doc": "지금 뜨는 물 기술 10 — OpenAlex 제목·초록 키워드 논문 수(출판연도 2022 대 2025). a=2022, b=2025. 숫자 기준 2026-10-28 (물벗 집계, 공개 가능한 숫자만).",
+ "as_of": "2026-10-28",
+ "baseline": {
+  "label": "OpenAlex 전체 논문",
+  "ratio": 1.43
+ },
+ "hero": {
+  "ratio": 11.2,
+  "a": 225,
+  "b": 2525,
+  "text": "AI로 물 관리"
+ },
+ "quiz": [
+  {
+   "id": "subject",
+   "h": "좋아하는 과목은?",
+   "opts": [
+    [
+     "code",
+     "수학·코딩"
+    ],
+    [
+     "science",
+     "과학(화학·생물)"
+    ],
+    [
+     "earth",
+     "지구·지리"
+    ],
+    [
+     "society",
+     "사회·경제"
+    ]
+   ]
+  },
+  {
+   "id": "doing",
+   "h": "해 보고 싶은 일은?",
+   "opts": [
+    [
+     "make",
+     "만들기·설계"
+    ],
+    [
+     "analyze",
+     "분석·실험"
+    ],
+    [
+     "field",
+     "현장 조사·점검"
+    ],
+    [
+     "persuade",
+     "기획·설득"
+    ]
+   ]
+  },
+  {
+   "id": "issue",
+   "h": "가장 관심 가는 문제는?",
+   "opts": [
+    [
+     "climate",
+     "기후위기"
+    ],
+    [
+     "safe",
+     "안전한 물"
+    ],
+    [
+     "energy",
+     "깨끗한 에너지"
+    ],
+    [
+     "future",
+     "미래 기술"
+    ]
+   ]
+  }
+ ],
+ "example": {
+  "subject": "code",
+  "doing": "analyze",
+  "issue": "future"
+ },
+ "items": [
+  {
+   "id": "ai",
+   "name": "물 AI",
+   "job": "물 AI 엔지니어 · 수자원 데이터 과학자",
+   "what": "비·강물·수질 데이터를 배운 AI가 홍수와 가뭄을 미리 알려 주고 정수장을 똑똑하게 운전합니다. 물 지식을 답하는 챗봇(거대언어모델)도 3년 새 4.5배로 늘었어요.",
+   "major": "컴퓨터공학, 데이터사이언스, 통계학, 수학",
+   "inst": "AI연구소",
+   "a": 225,
+   "b": 2525,
+   "ev": "‘AI water management’ 225→2,525편 · ‘large language model water’ 91→407편",
+   "tags": [
+    "code",
+    "analyze",
+    "future"
+   ]
+  },
+  {
+   "id": "sensor",
+   "name": "스마트 센서·이상 탐지",
+   "job": "스마트 상수도 엔지니어",
+   "what": "수도관 곳곳의 센서가 압력과 수질을 재고, AI가 누수나 이상을 사람보다 먼저 찾아냅니다.",
+   "major": "전자공학, 전기공학, 컴퓨터공학, 환경공학",
+   "inst": "상하수도연구소",
+   "a": 27,
+   "b": 227,
+   "ev": "‘anomaly detection water infrastructure’ 27→227편 · 국내 ‘상수도 관망’ 25배",
+   "tags": [
+    "code",
+    "make",
+    "safe"
+   ]
+  },
+  {
+   "id": "resil",
+   "name": "물 인프라 회복력·댐 안전",
+   "job": "물 인프라 안전 진단 전문가",
+   "what": "오래된 댐·수도관·제방이 지진과 폭우를 견디도록 상태를 진단하고, 망가져도 빨리 회복하게 설계합니다.",
+   "major": "토목공학, 건축공학, 도시공학, 지질학",
+   "inst": "물인프라안전연구소",
+   "a": 505,
+   "b": 2977,
+   "ev": "‘water infrastructure resilience’ 505→2,977편 · ‘dam safety monitoring’ 146→514편",
+   "tags": [
+    "earth",
+    "field",
+    "safe"
+   ]
+  },
+  {
+   "id": "twin",
+   "name": "디지털 트윈",
+   "job": "디지털 트윈 설계자",
+   "what": "실제 댐과 상수도를 컴퓨터 속에 쌍둥이로 만들어, 여러 상황을 미리 시험해 보고 가장 좋은 운영을 찾습니다.",
+   "major": "컴퓨터공학, 산업공학, 토목공학",
+   "inst": "AI연구소",
+   "a": 140,
+   "b": 692,
+   "ev": "‘digital twin water system’ 140→692편",
+   "tags": [
+    "code",
+    "make",
+    "future"
+   ]
+  },
+  {
+   "id": "policy",
+   "name": "물 정책·혁신",
+   "job": "물 정책 분석가 · 물 산업 기획자",
+   "what": "물을 누구에게 얼마나 나눌지, 요금과 투자는 어떻게 할지 정하고 새로운 물 산업을 기획합니다.",
+   "major": "행정학, 경제학, 경영학, 국제학",
+   "inst": "경영연구소",
+   "a": 679,
+   "b": 2791,
+   "ev": "‘water policy governance’ 679→2,791편 · ‘water industry innovation’ 494→1,637편",
+   "tags": [
+    "society",
+    "persuade",
+    "climate"
+   ]
+  },
+  {
+   "id": "h2",
+   "name": "그린수소·물 에너지",
+   "job": "그린수소 에너지 엔지니어",
+   "what": "물과 재생에너지로 수소를 만들고, 댐 위 수상 태양광·양수발전으로 깨끗한 전기를 얻습니다.",
+   "major": "화학공학, 에너지공학, 전기공학, 기계공학",
+   "inst": "물에너지연구소",
+   "a": 1579,
+   "b": 3829,
+   "ev": "‘green hydrogen water’ 1,579→3,829편 · ‘floating photovoltaic reservoir’ 57→120편",
+   "tags": [
+    "science",
+    "make",
+    "energy"
+   ]
+  },
+  {
+   "id": "sat",
+   "name": "위성으로 보는 물",
+   "job": "위성 물 관측 분석가",
+   "what": "인공위성 사진과 레이더로 홍수가 난 곳, 저수지 물 높이, 땅의 촉촉함을 넓게 한눈에 봅니다.",
+   "major": "지구과학, 대기과학, 공간정보공학, 컴퓨터공학",
+   "inst": "수자원위성연구소",
+   "a": 110,
+   "b": 256,
+   "ev": "‘water body detection satellite’ 110→256편 · ‘SAR flood mapping’ 148→283편",
+   "tags": [
+    "earth",
+    "analyze",
+    "future"
+   ]
+  },
+  {
+   "id": "eco",
+   "name": "수생태 복원",
+   "job": "수생태 복원 전문가",
+   "what": "망가진 강과 호수에 물고기와 식물이 다시 살 수 있도록 물길과 서식지를 되살립니다.",
+   "major": "생명과학, 생태학, 환경공학",
+   "inst": "수자원환경연구소",
+   "a": 300,
+   "b": 698,
+   "ev": "‘aquatic ecosystem restoration’ 300→698편",
+   "tags": [
+    "science",
+    "field",
+    "climate"
+   ]
+  },
+  {
+   "id": "climate",
+   "name": "기후위기 물 재해",
+   "job": "기후 물 재해 분석가",
+   "what": "더 세진 비와 더 길어진 가뭄을 예측하고, 도시가 물에 잠기지 않도록 대비책을 만듭니다.",
+   "major": "대기과학, 토목공학(수자원), 환경공학, 지리학",
+   "inst": "수자원환경연구소",
+   "a": 401,
+   "b": 813,
+   "ev": "‘drought flood risk water’ 401→813편 · 국내 ‘침수 예측’ 39배 · ‘홍수 대응’ 59배",
+   "tags": [
+    "earth",
+    "analyze",
+    "climate"
+   ]
+  },
+  {
+   "id": "pollutant",
+   "name": "새로운 오염물질 탐정",
+   "job": "환경 분석 과학자",
+   "what": "미세플라스틱, 잘 분해되지 않는 과불화화합물(PFAS), 항생제 내성 세균처럼 새로 알려진 오염을 찾아내고 없앱니다.",
+   "major": "환경공학, 화학, 미생물학",
+   "inst": "상하수도연구소 · 수자원환경연구소",
+   "a": null,
+   "b": null,
+   "newBadge": "신규",
+   "ev": "미세플라스틱 2015년 첫 등장 → 491편 · PFAS 2018년 → 120편 (핵심 12개 저널)",
+   "tags": [
+    "science",
+    "analyze",
+    "safe"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,929 @@
+{
+ "_doc": "물 관련 학부 학과가 있는 대학. 학과 이름은 2026-10 학교 누리집·2026~2027 모집요강으로 확인. lat/lon은 캠퍼스 대략 위치(지도 표시용). tier는 입시에서 흔히 쓰는 대략적 묶음 — 순위 아님. 학교를 더하거나 고칠 때는 univs에 한 항목.",
+ "as_of": "2026-10-28",
+ "tiers": [
+  {
+   "id": "seoul_sci",
+   "name": "서울 · 이공계 특성화",
+   "desc": "서울의 주요 대학과 이공계 특성화 대학(과학기술원)"
+  },
+  {
+   "id": "capital",
+   "name": "서울 · 수도권 주요 대학",
+   "desc": "서울과 경기·인천의 주요 대학"
+  },
+  {
+   "id": "flagship",
+   "name": "지역 거점 국립대",
+   "desc": "각 시·도를 대표하는 국립대학"
+  },
+  {
+   "id": "regional",
+   "name": "지역 국립 · 사립 대학",
+   "desc": "지역의 국립·사립 대학과 지역 캠퍼스"
+  }
+ ],
+ "excluded": "포스텍(환경공학부는 대학원 과정뿐), 서울과기대 건설환경융합공학과·충북대 지역건설공학과(재직자 과정), 인제대·경남대(공식 출처 미확인)",
+ "kwater": {
+  "name": "K-water연구원",
+  "lat": 36.39,
+  "lon": 127.402,
+  "note": "대전 유성구 (대략 위치)"
+ },
+ "univs": [
+  {
+   "tier": "seoul_sci",
+   "univ": "서울대학교",
+   "campus": "",
+   "region": "서울",
+   "depts": [
+    {
+     "name": "건설환경도시공학부",
+     "url": "https://cuee.snu.ac.kr/"
+    }
+   ],
+   "lat": 37.46,
+   "lon": 126.952
+  },
+  {
+   "tier": "seoul_sci",
+   "univ": "KAIST",
+   "campus": "",
+   "region": "대전",
+   "depts": [
+    {
+     "name": "건설및환경공학과",
+     "url": "https://cee.kaist.ac.kr/"
+    }
+   ],
+   "lat": 36.372,
+   "lon": 127.36
+  },
+  {
+   "tier": "seoul_sci",
+   "univ": "연세대학교",
+   "campus": "신촌캠퍼스",
+   "region": "서울",
+   "depts": [
+    {
+     "name": "사회환경시스템공학부 (건설환경공학과)",
+     "url": "https://civil.yonsei.ac.kr/"
+    }
+   ],
+   "lat": 37.566,
+   "lon": 126.939
+  },
+  {
+   "tier": "seoul_sci",
+   "univ": "고려대학교",
+   "campus": "",
+   "region": "서울",
+   "depts": [
+    {
+     "name": "건축사회환경공학부",
+     "url": "https://ace.korea.ac.kr/"
+    }
+   ],
+   "lat": 37.589,
+   "lon": 127.032
+  },
+  {
+   "tier": "seoul_sci",
+   "univ": "성균관대학교",
+   "campus": "자연과학캠퍼스",
+   "region": "경기 수원",
+   "depts": [
+    {
+     "name": "건설환경공학부",
+     "url": "https://cal.skku.edu/index.php?hCode=INTRO_01_01"
+    }
+   ],
+   "lat": 37.294,
+   "lon": 126.975
+  },
+  {
+   "tier": "seoul_sci",
+   "univ": "한양대학교",
+   "campus": "서울캠퍼스",
+   "region": "서울",
+   "depts": [
+    {
+     "name": "건설환경공학과",
+     "url": "https://civil.hanyang.ac.kr/sub4_1_c.php"
+    }
+   ],
+   "lat": 37.557,
+   "lon": 127.045
+  },
+  {
+   "tier": "seoul_sci",
+   "univ": "중앙대학교",
+   "campus": "서울캠퍼스",
+   "region": "서울",
+   "depts": [
+    {
+     "name": "사회기반시스템공학부 건설환경플랜트공학전공",
+     "url": "https://coe.cau.ac.kr/sub/sub02_01.php?cat_no=6"
+    }
+   ],
+   "lat": 37.505,
+   "lon": 126.957
+  },
+  {
+   "tier": "seoul_sci",
+   "univ": "경희대학교",
+   "campus": "국제캠퍼스",
+   "region": "경기 용인",
+   "depts": [
+    {
+     "name": "사회기반시스템공학과",
+     "url": "https://civileng.khu.ac.kr/civileng/user/contents/view.do?menuNo=17800006"
+    },
+    {
+     "name": "환경학및환경공학과",
+     "url": "https://eng.khu.ac.kr/eng_kor/user/contents/view.do?menuNo=17100016"
+    }
+   ],
+   "lat": 37.24,
+   "lon": 127.083
+  },
+  {
+   "tier": "seoul_sci",
+   "univ": "서울시립대학교",
+   "campus": "",
+   "region": "서울",
+   "depts": [
+    {
+     "name": "토목공학과",
+     "url": "https://www.uos.ac.kr/engineering/depart/civil/main.do"
+    },
+    {
+     "name": "환경공학부",
+     "url": "https://enveng.uos.ac.kr/sub01/sub01"
+    }
+   ],
+   "lat": 37.584,
+   "lon": 127.059
+  },
+  {
+   "tier": "seoul_sci",
+   "univ": "이화여자대학교",
+   "campus": "",
+   "region": "서울",
+   "depts": [
+    {
+     "name": "환경공학과",
+     "url": "https://environewha.ewha.ac.kr/"
+    }
+   ],
+   "lat": 37.562,
+   "lon": 126.947
+  },
+  {
+   "tier": "seoul_sci",
+   "univ": "GIST 광주과학기술원",
+   "campus": "",
+   "region": "광주",
+   "depts": [
+    {
+     "name": "환경·에너지공학과",
+     "url": "https://cwww.gist.ac.kr/env1/index.do"
+    }
+   ],
+   "lat": 35.228,
+   "lon": 126.843
+  },
+  {
+   "tier": "seoul_sci",
+   "univ": "UNIST 울산과학기술원",
+   "campus": "",
+   "region": "울산",
+   "depts": [
+    {
+     "name": "지구환경도시건설공학과",
+     "url": "https://uee.unist.ac.kr/?p=15"
+    }
+   ],
+   "lat": 35.573,
+   "lon": 129.191
+  },
+  {
+   "tier": "capital",
+   "univ": "건국대학교",
+   "campus": "서울캠퍼스",
+   "region": "서울",
+   "depts": [
+    {
+     "name": "사회환경공학부",
+     "url": "https://www.konkuk.ac.kr/cee/10014/subview.do"
+    }
+   ],
+   "lat": 37.541,
+   "lon": 127.079
+  },
+  {
+   "tier": "capital",
+   "univ": "동국대학교",
+   "campus": "서울캠퍼스",
+   "region": "서울",
+   "depts": [
+    {
+     "name": "건설환경공학과",
+     "url": "https://civil.dongguk.edu/page/497"
+    }
+   ],
+   "lat": 37.558,
+   "lon": 127.0
+  },
+  {
+   "tier": "capital",
+   "univ": "홍익대학교",
+   "campus": "서울캠퍼스",
+   "region": "서울",
+   "depts": [
+    {
+     "name": "건설환경공학과",
+     "url": "https://civil.hongik.ac.kr/civil/sub/030302.do"
+    }
+   ],
+   "lat": 37.551,
+   "lon": 126.925
+  },
+  {
+   "tier": "capital",
+   "univ": "국민대학교",
+   "campus": "",
+   "region": "서울",
+   "depts": [
+    {
+     "name": "건설시스템공학부",
+     "url": "https://cms.kookmin.ac.kr/cee/info/history.do"
+    }
+   ],
+   "lat": 37.611,
+   "lon": 126.997
+  },
+  {
+   "tier": "capital",
+   "univ": "세종대학교",
+   "campus": "",
+   "region": "서울",
+   "depts": [
+    {
+     "name": "건설환경공학과",
+     "url": "https://www.sejong.ac.kr/kor/college/civil-and-environmental-engineering.do"
+    },
+    {
+     "name": "환경융합공학과",
+     "url": "https://www.sejong.ac.kr/kor/college/department-of-environment-energy-geoinformatics.do"
+    }
+   ],
+   "lat": 37.55,
+   "lon": 127.073
+  },
+  {
+   "tier": "capital",
+   "univ": "광운대학교",
+   "campus": "",
+   "region": "서울",
+   "depts": [
+    {
+     "name": "환경공학과",
+     "url": "https://www.kw.ac.kr/ko/univ/engineering03_4.jsp"
+    }
+   ],
+   "lat": 37.619,
+   "lon": 127.06
+  },
+  {
+   "tier": "capital",
+   "univ": "서울과학기술대학교",
+   "campus": "",
+   "region": "서울",
+   "depts": [
+    {
+     "name": "건설시스템공학과",
+     "url": ""
+    },
+    {
+     "name": "환경공학과",
+     "url": "https://enviro.seoultech.ac.kr/about/intro/"
+    }
+   ],
+   "lat": 37.632,
+   "lon": 127.077
+  },
+  {
+   "tier": "capital",
+   "univ": "인하대학교",
+   "campus": "",
+   "region": "인천",
+   "depts": [
+    {
+     "name": "사회인프라공학과",
+     "url": "https://civil.inha.ac.kr/civil/2366/subview.do"
+    },
+    {
+     "name": "환경공학과",
+     "url": "https://environment.inha.ac.kr/environment/2517/subview.do"
+    }
+   ],
+   "lat": 37.451,
+   "lon": 126.653
+  },
+  {
+   "tier": "capital",
+   "univ": "아주대학교",
+   "campus": "",
+   "region": "경기 수원",
+   "depts": [
+    {
+     "name": "건설시스템공학과",
+     "url": "https://www.ajou.ac.kr/ce/edu/objective.do"
+    },
+    {
+     "name": "환경안전공학과",
+     "url": "https://www.ajou.ac.kr/env/introduction/history.do"
+    }
+   ],
+   "lat": 37.283,
+   "lon": 127.044
+  },
+  {
+   "tier": "capital",
+   "univ": "한양대학교",
+   "campus": "ERICA캠퍼스",
+   "region": "경기 안산",
+   "depts": [
+    {
+     "name": "건설환경공학과",
+     "url": "https://ieng.hanyang.ac.kr/-24"
+    }
+   ],
+   "lat": 37.298,
+   "lon": 126.836
+  },
+  {
+   "tier": "capital",
+   "univ": "명지대학교",
+   "campus": "자연캠퍼스",
+   "region": "경기 용인",
+   "depts": [
+    {
+     "name": "스마트인프라공학부 건설환경공학전공",
+     "url": "https://www.mju.ac.kr/mjukr/780/subview.do"
+    },
+    {
+     "name": "스마트인프라공학부 환경시스템공학전공",
+     "url": "https://www.mju.ac.kr/mjukr/773/subview.do"
+    }
+   ],
+   "lat": 37.222,
+   "lon": 127.187
+  },
+  {
+   "tier": "capital",
+   "univ": "단국대학교",
+   "campus": "죽전캠퍼스",
+   "region": "경기 용인",
+   "depts": [
+    {
+     "name": "인프라건설공학과",
+     "url": "https://cms.dankook.ac.kr/web/dkucee/-21"
+    }
+   ],
+   "lat": 37.322,
+   "lon": 127.127
+  },
+  {
+   "tier": "capital",
+   "univ": "가천대학교",
+   "campus": "글로벌캠퍼스",
+   "region": "경기 성남",
+   "depts": [
+    {
+     "name": "건설환경공학과",
+     "url": ""
+    }
+   ],
+   "lat": 37.45,
+   "lon": 127.127
+  },
+  {
+   "tier": "flagship",
+   "univ": "부산대학교",
+   "campus": "부산캠퍼스",
+   "region": "부산",
+   "depts": [
+    {
+     "name": "사회기반시스템공학과",
+     "url": "https://eng.pusan.ac.kr/eng/8707/subview.do"
+    },
+    {
+     "name": "환경공학과",
+     "url": "https://eng.pusan.ac.kr/eng/8707/subview.do"
+    }
+   ],
+   "lat": 35.233,
+   "lon": 129.079
+  },
+  {
+   "tier": "flagship",
+   "univ": "경북대학교",
+   "campus": "대구캠퍼스",
+   "region": "대구",
+   "depts": [
+    {
+     "name": "토목공학과",
+     "url": ""
+    },
+    {
+     "name": "환경공학과",
+     "url": ""
+    },
+    {
+     "name": "농업토목공학과",
+     "url": ""
+    }
+   ],
+   "lat": 35.889,
+   "lon": 128.61
+  },
+  {
+   "tier": "flagship",
+   "univ": "전남대학교",
+   "campus": "광주캠퍼스",
+   "region": "광주",
+   "depts": [
+    {
+     "name": "토목공학과",
+     "url": ""
+    },
+    {
+     "name": "환경에너지공학과",
+     "url": ""
+    },
+    {
+     "name": "지역·바이오시스템공학과",
+     "url": "https://rbe.jnu.ac.kr/rbe/4835/subview.do"
+    }
+   ],
+   "lat": 35.177,
+   "lon": 126.906
+  },
+  {
+   "tier": "flagship",
+   "univ": "충남대학교",
+   "campus": "",
+   "region": "대전",
+   "depts": [
+    {
+     "name": "토목공학과",
+     "url": ""
+    },
+    {
+     "name": "환경공학과",
+     "url": "https://cals.cnu.ac.kr/envi/english/greetings_en.do"
+    },
+    {
+     "name": "지역환경토목학과",
+     "url": ""
+    }
+   ],
+   "lat": 36.369,
+   "lon": 127.345
+  },
+  {
+   "tier": "flagship",
+   "univ": "충북대학교",
+   "campus": "",
+   "region": "충북 청주",
+   "depts": [
+    {
+     "name": "토목공학부",
+     "url": ""
+    },
+    {
+     "name": "환경공학과",
+     "url": ""
+    }
+   ],
+   "lat": 36.628,
+   "lon": 127.456
+  },
+  {
+   "tier": "flagship",
+   "univ": "전북대학교",
+   "campus": "전주캠퍼스",
+   "region": "전북",
+   "depts": [
+    {
+     "name": "토목공학과",
+     "url": ""
+    },
+    {
+     "name": "환경공학과",
+     "url": ""
+    },
+    {
+     "name": "지역건설공학과",
+     "url": ""
+    }
+   ],
+   "lat": 35.847,
+   "lon": 127.129
+  },
+  {
+   "tier": "flagship",
+   "univ": "강원대학교",
+   "campus": "춘천캠퍼스",
+   "region": "강원",
+   "depts": [
+    {
+     "name": "토목공학과",
+     "url": ""
+    },
+    {
+     "name": "환경공학과",
+     "url": ""
+    },
+    {
+     "name": "지역건설공학과",
+     "url": ""
+    }
+   ],
+   "lat": 37.869,
+   "lon": 127.744
+  },
+  {
+   "tier": "flagship",
+   "univ": "경상국립대학교",
+   "campus": "",
+   "region": "경남 진주",
+   "depts": [
+    {
+     "name": "토목공학과",
+     "url": "https://www.gnu.ac.kr/civil/pi/prfsr/selectPrfsrIntrdView.do?mi=6417"
+    },
+    {
+     "name": "건설시스템공학과",
+     "url": "https://www.gnu.ac.kr/cee/main.do"
+    },
+    {
+     "name": "환경공학과",
+     "url": "https://www.gnu.ac.kr/cee/main.do"
+    },
+    {
+     "name": "지역시스템공학과",
+     "url": "https://www.gnu.ac.kr/cals/cm/cntnts/cntntsView.do?mi=1968&cntntsId=1567"
+    }
+   ],
+   "lat": 35.153,
+   "lon": 128.099
+  },
+  {
+   "tier": "flagship",
+   "univ": "제주대학교",
+   "campus": "",
+   "region": "제주",
+   "depts": [
+    {
+     "name": "토목공학과",
+     "url": ""
+    },
+    {
+     "name": "환경공학과",
+     "url": ""
+    }
+   ],
+   "lat": 33.456,
+   "lon": 126.562
+  },
+  {
+   "tier": "regional",
+   "univ": "울산대학교",
+   "campus": "",
+   "region": "울산",
+   "depts": [
+    {
+     "name": "건축·도시환경학부 건설환경공학트랙",
+     "url": "https://abe.ulsan.ac.kr/abe/6652"
+    }
+   ],
+   "lat": 35.544,
+   "lon": 129.256
+  },
+  {
+   "tier": "regional",
+   "univ": "영남대학교",
+   "campus": "",
+   "region": "경북 경산",
+   "depts": [
+    {
+     "name": "건설시스템공학과",
+     "url": "https://www.yu.ac.kr/main/academics/civil.do?forapp=1"
+    },
+    {
+     "name": "환경공학과",
+     "url": "https://www.yu.ac.kr/main/academics/enveng.do?forapp=1"
+    }
+   ],
+   "lat": 35.833,
+   "lon": 128.757
+  },
+  {
+   "tier": "regional",
+   "univ": "계명대학교",
+   "campus": "",
+   "region": "대구",
+   "depts": [
+    {
+     "name": "토목공학과",
+     "url": ""
+    },
+    {
+     "name": "환경공학과",
+     "url": ""
+    }
+   ],
+   "lat": 35.856,
+   "lon": 128.489
+  },
+  {
+   "tier": "regional",
+   "univ": "동아대학교",
+   "campus": "",
+   "region": "부산",
+   "depts": [
+    {
+     "name": "건설시스템공학과",
+     "url": "https://about.donga.ac.kr/about/CMS/Contents/Contents.do?mCode=MN031"
+    },
+    {
+     "name": "환경·에너지공학부 환경안전전공",
+     "url": "https://envu.donga.ac.kr/"
+    }
+   ],
+   "lat": 35.116,
+   "lon": 128.968
+  },
+  {
+   "tier": "regional",
+   "univ": "조선대학교",
+   "campus": "",
+   "region": "광주",
+   "depts": [
+    {
+     "name": "토목공학과",
+     "url": "https://civil.chosun.ac.kr/civil/index.do"
+    },
+    {
+     "name": "환경공학과",
+     "url": "https://engineering.chosun.ac.kr/sites/env/index.do"
+    }
+   ],
+   "lat": 35.141,
+   "lon": 126.931
+  },
+  {
+   "tier": "regional",
+   "univ": "국립금오공과대학교",
+   "campus": "",
+   "region": "경북 구미",
+   "depts": [
+    {
+     "name": "건축토목환경공학부 토목공학전공",
+     "url": "https://www.kumoh.ac.kr/ko/sub02_01_03.do"
+    },
+    {
+     "name": "건축토목환경공학부 환경공학전공",
+     "url": "https://www.kumoh.ac.kr/ko/sub02_01_03.do"
+    }
+   ],
+   "lat": 36.146,
+   "lon": 128.394
+  },
+  {
+   "tier": "regional",
+   "univ": "국립한밭대학교",
+   "campus": "",
+   "region": "대전",
+   "depts": [
+    {
+     "name": "건설환경공학과",
+     "url": "https://fund.hanbat.ac.kr/cien/"
+    }
+   ],
+   "lat": 36.351,
+   "lon": 127.299
+  },
+  {
+   "tier": "regional",
+   "univ": "국립공주대학교",
+   "campus": "천안캠퍼스",
+   "region": "충남",
+   "depts": [
+    {
+     "name": "스마트인프라공학과",
+     "url": ""
+    },
+    {
+     "name": "환경공학과",
+     "url": ""
+    }
+   ],
+   "lat": 36.851,
+   "lon": 127.151
+  },
+  {
+   "tier": "regional",
+   "univ": "국립공주대학교",
+   "campus": "예산캠퍼스",
+   "region": "충남",
+   "depts": [
+    {
+     "name": "지역건설공학과",
+     "url": ""
+    }
+   ],
+   "lat": 36.666,
+   "lon": 126.847
+  },
+  {
+   "tier": "regional",
+   "univ": "연세대학교",
+   "campus": "미래캠퍼스",
+   "region": "강원 원주",
+   "depts": [
+    {
+     "name": "환경에너지공학부 환경공학전공",
+     "url": "https://envi.yonsei.ac.kr/"
+    }
+   ],
+   "lat": 37.279,
+   "lon": 127.903
+  },
+  {
+   "tier": "regional",
+   "univ": "경북대학교",
+   "campus": "상주캠퍼스",
+   "region": "경북",
+   "depts": [
+    {
+     "name": "건설방재공학과",
+     "url": ""
+    },
+    {
+     "name": "환경안전공학과",
+     "url": ""
+    }
+   ],
+   "lat": 36.377,
+   "lon": 128.145
+  },
+  {
+   "tier": "regional",
+   "univ": "전남대학교",
+   "campus": "여수캠퍼스",
+   "region": "전남",
+   "depts": [
+    {
+     "name": "환경시스템공학과",
+     "url": ""
+    }
+   ],
+   "lat": 34.774,
+   "lon": 127.702
+  },
+  {
+   "tier": "regional",
+   "univ": "강원대학교",
+   "campus": "삼척캠퍼스",
+   "region": "강원",
+   "depts": [
+    {
+     "name": "미래토목건설공학과",
+     "url": ""
+    }
+   ],
+   "lat": 37.451,
+   "lon": 129.163
+  },
+  {
+   "tier": "regional",
+   "univ": "강원대학교",
+   "campus": "강릉캠퍼스",
+   "region": "강원 강릉",
+   "depts": [
+    {
+     "name": "건설환경공학부",
+     "url": "https://civil.gwnu.ac.kr/sites/civil/index.do"
+    }
+   ],
+   "lat": 37.771,
+   "lon": 128.871
+  },
+  {
+   "tier": "regional",
+   "univ": "국립부경대학교",
+   "campus": "",
+   "region": "부산",
+   "depts": [
+    {
+     "name": "지속가능공학부 토목공학전공",
+     "url": "https://civil.pknu.ac.kr/civil/5312"
+    },
+    {
+     "name": "지구환경시스템과학부 환경공학전공",
+     "url": ""
+    },
+    {
+     "name": "해양공학과",
+     "url": ""
+    }
+   ],
+   "lat": 35.134,
+   "lon": 129.103
+  },
+  {
+   "tier": "regional",
+   "univ": "국립한국해양대학교",
+   "campus": "",
+   "region": "부산",
+   "depts": [
+    {
+     "name": "토목공학과",
+     "url": "https://www.kmou.ac.kr/civil/main.do"
+    },
+    {
+     "name": "환경공학과",
+     "url": "https://www.kmou.ac.kr/ene/main.do"
+    },
+    {
+     "name": "해양공학과",
+     "url": "https://www.kmou.ac.kr/oe/main.do"
+    },
+    {
+     "name": "해양과학융합학부 해양환경학전공",
+     "url": "https://www.kmou.ac.kr/dos/main.do"
+    }
+   ],
+   "lat": 35.076,
+   "lon": 129.087
+  },
+  {
+   "tier": "regional",
+   "univ": "국립순천대학교",
+   "campus": "",
+   "region": "전남 순천",
+   "depts": [
+    {
+     "name": "토목공학과",
+     "url": "https://www.scnu.ac.kr/civil/cm/cntnts/cntntsView.do?mi=3659&cntntsId=2210"
+    },
+    {
+     "name": "환경공학과",
+     "url": "https://www.scnu.ac.kr/environment/cm/cntnts/cntntsView.do?mi=3184&cntntsId=2084"
+    }
+   ],
+   "lat": 34.968,
+   "lon": 127.481
+  },
+  {
+   "tier": "regional",
+   "univ": "국립목포대학교",
+   "campus": "",
+   "region": "전남",
+   "depts": [
+    {
+     "name": "건축·토목·환경공학부 토목공학전공",
+     "url": "https://civil.mokpo.ac.kr/civil/3489/subview.do"
+    },
+    {
+     "name": "건축·토목·환경공학부 환경공학전공",
+     "url": "https://mnuk2.mokpo.ac.kr/sites/mnuenvi/index.do"
+    }
+   ],
+   "lat": 34.91,
+   "lon": 126.437
+  },
+  {
+   "tier": "regional",
+   "univ": "경상국립대학교",
+   "campus": "통영캠퍼스",
+   "region": "경남 통영",
+   "depts": [
+    {
+     "name": "해양토목공학과",
+     "url": "https://www.gnu.ac.kr/marsci/cm/cntnts/cntntsView.do?mi=2416&cntntsId=1835"
+    },
+    {
+     "name": "해양환경공학과",
+     "url": "https://www.gnu.ac.kr/marenv/main.do"
+    }
+   ],
+   "lat": 34.839,
+   "lon": 128.397
+  }
+ ]
+}
